@@ -89,7 +89,8 @@ let foodArray = Object.keys(food);
 export default function App() {
   let [emoji, updateEmoji] = useState("");
   function handleInput(inp) {
-    updateEmoji(food[inp.target.value]);
+    if (food[inp.target.value]) return updateEmoji(food[inp.target.value]);
+    return updateEmoji("Sorry we couldn't recognise this emoji");
   }
 
   function emojiHandler(emoji) {

@@ -12,24 +12,25 @@ html {
 }
 
 .ans {
+  font-size: 1.5rem;
   color: black;
   background-color: white;
-  height: 1.5em;
-  width: 15em;
+  height: 2em;
+  width: 22em;
   margin: 0 auto;
-  padding-top: 0.4em;
+  padding-top: 0.8em;
   border-radius: 0.3em;
-  max-width: 92%;
+  max-width: 95%;
 }
 
 .input {
   width: 45em;
   margin-top: 2em;
   height: 3em;
-  width: 22em;
+  width: 30em;
   border-radius: 0.6em;
   border: none;
-  max-width: 92%;
+  max-width: 80%;
 }
 
 .text {
@@ -50,4 +51,16 @@ html {
 
 .items:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .ans {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .ans {
+    font-size: 1rem;
+  }
 }
