@@ -1,0 +1,49 @@
+.App {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  text-align: center;
+}
+
+html {
+  background-color: black;
+}
+
+.header {
+  color: white;
+}
+
+.ans {
+  color: black;
+  background-color: white;
+  height: 1.5em;
+  width: 15em;
+  margin: 0 auto;
+  padding-top: 0.4em;
+  border-radius: 0.3em;
+  max-width: 92%;
+}
+
+.input {
+  width: 45em;
+  margin-top: 2em;
+  height: 3em;
+  width: 22em;
+  border-radius: 0.6em;
+  border: none;
+  max-width: 92%;
+}
+
+.text {
+  color: white;
+}
+
+.container {
+  width: 42em;
+  margin: 0 auto;
+  max-width: 92%;
+}
+
+.items {
+  margin: 0 1em;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
