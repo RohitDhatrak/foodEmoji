@@ -49,6 +49,10 @@ html {
   font-size: 1.5rem;
 }
 
+.items:active {
+  background-color: #242424;
+}
+
 .items:hover {
   cursor: pointer;
 }
