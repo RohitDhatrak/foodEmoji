@@ -1,2 +1,0 @@
-# foodEmoji
-Created with CodeSandbox
