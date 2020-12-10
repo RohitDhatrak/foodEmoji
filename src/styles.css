@@ -27,10 +27,11 @@ html {
   width: 45em;
   margin-top: 2em;
   height: 3em;
-  width: 30em;
+  width: 25em;
   border-radius: 0.6em;
   border: none;
   max-width: 80%;
+  padding: 0 1em;
 }
 
 .text {
