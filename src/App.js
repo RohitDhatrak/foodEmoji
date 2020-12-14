@@ -88,8 +88,16 @@ let foodArray = Object.keys(food);
 
 export default function App() {
   let [emoji, updateEmoji] = useState("Output will be shown here");
+
+  function getKey(value) {
+    return foodArray.find(
+      (key) => food[key].toLowerCase() === value.toLowerCase()
+    );
+  }
+
   function handleInput(inp) {
     if (food[inp.target.value]) return updateEmoji(food[inp.target.value]);
+    if (getKey(inp.target.value)) return updateEmoji(getKey(inp.target.value));
     return updateEmoji("Sorry we couldn't recognise this emoji");
   }
 
@@ -104,7 +112,7 @@ export default function App() {
       <input
         className="input"
         onChange={handleInput}
-        placeholder="Enter your emoji here"
+        placeholder="Search by emoji or by name"
       ></input>
       <h3 className="text">Or select one from below</h3>
       <div className="container">
